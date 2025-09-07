@@ -25,7 +25,7 @@ nav {
 }
 
 .hero-section {
-  background: url("../public/bg.avif");
+  background: url("../bg.avif");
   background-size: cover;
   height: 96vh;
   color: #1a1a1a;
@@ -108,4 +108,12 @@ button:hover {
   filter: blur(60);
   cursor: pointer;
   color: white;
+}
+
+.container {
+  height: 750px;
+}
+
+.innovation {
+  background-color: black;
 }

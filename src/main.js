@@ -27,6 +27,32 @@ document.querySelector("#app").innerHTML = `
       </header>
       
     </section>
+    <section class="container innovation">
+      <article>
+        <h2>Latest Innovation</h2>
+      </article>
+    </section>
+
+    <section class="container latest">
+      <article>
+        <h2>Latest Sales</h2>
+      </article>
+    </section>
+
+    <section class="container tech">
+      <article>
+        <h2>Latest News</h2>
+      </article>
+    </section>
+
+    <section class="container sales-reviews">
+      <article>
+        <h2>Latest Sales and Reviews</h2>
+      </article>
+      <aside></aside>
+    </section>
+
+    <footer></footer>
   </div>
 `;
 
