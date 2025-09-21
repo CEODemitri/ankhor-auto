@@ -12,11 +12,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-#app {
+/* #app {
   max-width: 100vw;
   margin: 0 auto;
   text-align: center;
+} */
+
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 nav {
@@ -25,9 +38,7 @@ nav {
 }
 
 .hero-section {
-  background: url("../bg.avif");
-  background-size: cover;
-  height: 96vh;
+  background: url("../bg.avif") no-repeat center center/cover;
   color: #1a1a1a;
   padding: .6rem 2rem;
 
@@ -71,7 +82,7 @@ nav {
   div {
     display: flex;
     flex-direction: column;
-    margin-top: 17rem;
+    margin-top: 6rem;
   }
 }
 
@@ -111,9 +122,33 @@ button:hover {
 }
 
 .container {
-  height: 750px;
+  min-height: 700px;
 }
 
 .innovation {
   background-color: black;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.car-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.car-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.car-card .info {
+  padding: 1rem;
 }

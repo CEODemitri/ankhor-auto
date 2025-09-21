@@ -2,12 +2,96 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="src/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ankhor Auto</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <section>
+        <header class="hero-section">
+          <nav>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list menu"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+            <a href="/" class="tooltip-container">Ankhor Autos <span class="tooltip-text">home</span></a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill menu"
+              viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>
+          </nav>
+      
+      
+          <div>
+            <article>
+              <h1>Rides like lightning. One of Ones.</h1>
+            </article>
+            <button>EXPLORE</button>
+          </div>
+        </header>
+      
+      </section>
+      <section class="container innovation">
+        <article>
+          <h2>Latest Innovation</h2>
+        </article>
+      </section>
+      
+      <section class="container car-grid" id="cars">
+        <article>
+          <h2>Latest Sales</h2>
+        </article>
+      </section>
+      
+      <section class="container tech">
+        <article>
+          <h2>Latest News</h2>
+        </article>
+      </section>
+      
+      <section class="container sales-reviews">
+        <article>
+          <h2>Latest Sales and Reviews</h2>
+        </article>
+        <aside></aside>
+      </section>
+      
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-branding">
+            <h2>Ankhor Auto</h2>
+            <p>Your trusted car dealer since 1998.</p>
+          </div>
+      
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#cars">Inventory</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Financing</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>📍 123 Car Street, Auto City</p>
+            <p>📞 (555) 123-4567</p>
+            <p>✉️ sales@premierautolot.com</p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          &copy; 2025 Premier Auto Lot. All rights reserved.
+        </div>
+      </footer>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

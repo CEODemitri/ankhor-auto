@@ -1,59 +1,45 @@
-import "./style.css";
-import javascriptLogo from "./javascript.svg";
-import viteLogo from "/vite.svg";
-import { setupCounter } from "./counter.js";
+// import "./style.css";
+// import javascriptLogo from "./javascript.svg";
+// import viteLogo from "/vite.svg";
+// import { setupCounter } from "./counter.js";
 
-document.querySelector("#app").innerHTML = `
-  <div>
-    <section>
-      <header class="hero-section">
-        <nav>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list menu" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-          </svg>
-          <a href="/" class="tooltip-container">Ankhor Autos <span class="tooltip-text">home</span></a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill menu" viewBox="0 0 16 16">
-            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-          </svg>
-        </nav>
+// document.querySelector("#app").innerHTML = `
+//   <div>
 
-        
-        <div>
-          <article>
-            <h1>Rides like lightning. One of Ones.</h1>
-          </article>
-          <button>EXPLORE</button>
-        </div>
-      </header>
-      
-    </section>
-    <section class="container innovation">
-      <article>
-        <h2>Latest Innovation</h2>
-      </article>
-    </section>
+//   </div>
+// `;
 
-    <section class="container latest">
-      <article>
-        <h2>Latest Sales</h2>
-      </article>
-    </section>
+// setupCounter(document.querySelector("#counter"));
 
-    <section class="container tech">
-      <article>
-        <h2>Latest News</h2>
-      </article>
-    </section>
+const cars = [
+  {
+    name: "2021 Toyota Camry",
+    price: "$22,900",
+    image: "https://source.unsplash.com/featured/?toyota,camry",
+  },
+  {
+    name: "2020 Ford Mustang",
+    price: "$26,500",
+    image: "https://source.unsplash.com/featured/?ford,mustang",
+  },
+  {
+    name: "2019 Honda Civic",
+    price: "$17,800",
+    image: "https://source.unsplash.com/featured/?honda,civic",
+  },
+];
 
-    <section class="container sales-reviews">
-      <article>
-        <h2>Latest Sales and Reviews</h2>
-      </article>
-      <aside></aside>
-    </section>
+const carGrid = document.querySelector(".car-grid");
 
-    <footer></footer>
-  </div>
-`;
-
-setupCounter(document.querySelector("#counter"));
+cars.forEach((car) => {
+  const card = document.createElement("div");
+  card.className = "car-card";
+  card.innerHTML = `
+    <img src="${car.image}" alt="${car.name}" />
+    <div class="info">
+      <h3>${car.name}</h3>
+      <p><strong>${car.price}</strong></p>
+    </div>
+  `;
+  carGrid.appendChild(card);
+});
