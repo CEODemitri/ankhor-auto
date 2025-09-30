@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #101010;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,9 +38,13 @@ nav {
 }
 
 .hero-section {
-  background: url("../bg.avif") no-repeat center center/cover;
-  color: #1a1a1a;
+  /* background: url("../bg.avif") no-repeat center center/cover; */
+  color: #909090;
   padding: .6rem 2rem;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   a {
     color: #1a1a1a;
@@ -82,7 +86,7 @@ nav {
   div {
     display: flex;
     flex-direction: column;
-    margin-top: 6rem;
+    justify-content: end
   }
 }
 
@@ -119,6 +123,7 @@ button:hover {
   filter: blur(60);
   cursor: pointer;
   color: white;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .container {
@@ -151,4 +156,13 @@ button:hover {
 
 .car-card .info {
   padding: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
