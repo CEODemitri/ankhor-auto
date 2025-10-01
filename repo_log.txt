@@ -1,0 +1,7 @@
+c2684b7 - ceoDemitri, 8 seconds ago : enhance hero section ui. feel 90%
+ba4ea06 - ceoDemitri, 30 minutes ago : hero paragraph update and nav logo color change
+132f675 - ceoDemitri, 24 hours ago : blank homepae; structure first my guy
+8b2565f - ceoDemitri, 10 days ago : um yea: adds unique favicon, cards and grid for latest cars section, a footer template and removes static html from main.js.
+f34909c - ceoDemitri, 3 weeks ago : adds landing stucture
+826dfe0 - ceoDemitri, 4 weeks ago : hero section layed. added readme for ref
+13dbc6e - ceoDemitri, 4 weeks ago : First Commit
