@@ -125,6 +125,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 2.6em;
+  max-width: 650px;
+  text-align: left;
+  text-shadow: -1px 1px 3px #575757;
+  margin: 0;
+  color: #575757;
+}
+
 h1 + p {
   color: #b3b3b3;
   margin-top: -10px;
@@ -157,7 +166,8 @@ button:hover {
 }
 
 .container {
-  min-height: 700px;
+  height: 85vh;
+  padding: 0.6rem 1rem;
 }
 
 .innovation {
@@ -196,3 +206,24 @@ button:hover {
     opacity: 1;
   }
 }
+
+/* lastest innovation */
+.latest-tech {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.8rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* pick style */
