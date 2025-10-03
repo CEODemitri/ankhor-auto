@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -53,7 +54,7 @@
       <section class="container innovation">
         <article>
           <h2>Our Latest Endeavours</h2>
-          <p>Today’s cars are smarter, safer, and more connected than ever. From self-driving features to electric power and
+          <p>Today&#39;s cars are smarter, safer, and more connected than ever. From self-driving features to electric power and
             real-time updates, the latest automotive technology is transforming the way we drive and interact with our vehicles.
           </p>
 
@@ -165,11 +166,43 @@
         </article>
       </section>
       
-      <section class="container sales-reviews">
+      <section class="container connect">
         <article>
           <h2>Connect with Us</h2>
         </article>
-        <aside></aside>
+        <form action="submit-form.php" method="post">
+          <fieldset>
+            <legend>Send us a message</legend>
+        
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        
+            <button type="submit">Send Message</button>
+          </fieldset>
+        </form>
+        
+        <address>
+          <p><strong>Email:</strong> contact@example.com</p>
+          <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p><strong>Address:</strong> 123 Main Street, Cityville, Country</p>
+        </address>
+        <aside>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <span class="material-symbols-outlined">facebook</span>
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <span class="material-symbols-outlined">X</span>
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <span class="material-symbols-outlined">photo_camera</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <span class="material-symbols-outlined">business_center</span>
+          </a>
+        </aside>
       </section>
       
       <footer class="site-footer">

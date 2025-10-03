@@ -256,7 +256,7 @@ button:hover {
   
 }
 
-/* blog section */
+/* blog */
 .news-articles {
   background-color: #121212;
   padding: 1rem;
@@ -277,4 +277,13 @@ button:hover {
   background-color: #2d2d2d;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+}
+
+
+/* connect */
+.connect {
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 8px;
+  height: 525px;
 }

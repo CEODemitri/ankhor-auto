@@ -6,9 +6,19 @@ Car lot based in Bahama, Alabama well known for their inventory of interesting a
 
 HTML, CSS, Javascript, SQL
 
+---
+
 ## To Do
 
-- [ ] Build the Brand from scratch
+day to day
+
+- [ ] latest endeavours enhance
+
+---
+
+BIG
+
+- [ ] Build the Brand site from scratch
 - [ ] Landing Page Deployed
 
 Credits
