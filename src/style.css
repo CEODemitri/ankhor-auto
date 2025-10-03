@@ -227,3 +227,31 @@ button:hover {
 }
 
 /* pick style */
+.car-card {
+  background-color: #2d2d2d;
+  border: none;
+}
+
+.car-card .info {
+  color: #b3b3b3;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  animation: border-glow 1.5s infinite;
+}
+
+@keyframes border-glow {
+  0% {
+    box-shadow: 0 0 5px #ff6f61;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff6f61;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff6f61;
+  }
+  
+}
