@@ -255,3 +255,26 @@ button:hover {
   }
   
 }
+
+/* blog section */
+.news-articles {
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.featured-article {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-article:hover {
+  background-color: #2d2d2d;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
