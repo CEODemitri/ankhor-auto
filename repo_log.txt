@@ -1,6 +1,8 @@
-2c794eb - ceoDemitri, 11 seconds ago : news articles added, blog section structure
-78f3459 - ceoDemitri, 5 minutes ago : style section update with new images and card style
-2e2da5f - ceoDemitri, 24 minutes ago : innovation section addition. working on structure
+000b3e3 - ceoDemitri, 3 seconds ago : landing page laid, basic structure
+aac2e83 - ceoDemitri, 8 minutes ago : news articles added, blog section structure
+2c794eb - ceoDemitri, 8 minutes ago : news articles added, blog section structure
+78f3459 - ceoDemitri, 14 minutes ago : style section update with new images and card style
+2e2da5f - ceoDemitri, 32 minutes ago : innovation section addition. working on structure
 23ac03d - ceoDemitri, 11 hours ago : more copy for hero section. new icon.
 f47f175 - ceoDemitri, 2 days ago : enhance hero section ui. feel 90%
 c2684b7 - ceoDemitri, 2 days ago : enhance hero section ui. feel 90%
