@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>design System for AA</title>
-</head>
-<body class="">
+  </head>
+  <body class="">
     <div class="container">
-        <h1>Design Space</h1>
+      <h1 class="fs-700 ff-heading">Design Space</h1>
 
-        <section class="colors">
-            <h2>Colors</h2>
+      <section class="colors">
+        <h2 class="fs-500">🧞‍♂️ Colors</h2>
+        <div class="flex">
             <div class="bg-dark text-white" style="padding: 1rem">
                 <p>Dark</p>
                 <p>hsl(180, 60%, 6%)</p>
             </div>
-            <div class="bg-accent text-dark" style="padding: 1rem">
+            <div class="bg-light text-accent" style="padding: 1rem">
                 <p>Accent</p>
                 <p>hsl(180, 94%, 86%)</p>
             </div>
@@ -24,7 +25,56 @@
                 <p>White</p>
                 <p>hsl(0, 0%, 100%)</p>
             </div>
+            <div class="bg-accent text-dark" style="padding: 1rem">
+                <p>Accent</p>
+                <p>hsl(180, 94%, 86%)</p>
+            </div>
+        </div>
+      </section>
+
+        <section class="typography">
+            <h2 class="fs-500">🥷 Typography</h2>
+            <div class="flex">
+                <div class="flex" style="flex-direction: column; flex-basis: 50%;">
+                    <div>
+                        <p class="fs-200 text-accent">Fira Code - Heading 1 - 3.8rem</p>
+                        <p class="fs-700 ff-heading uppercase">Chariot</p>
+                    </div>
+                    <div>
+                        <p class="fs-200 text-accent">Fira Code - Heading 2 - 2rem</p>
+                        <p class="fs-600 ff-heading uppercase">Starfield</p>
+                    </div>
+                    <div>
+                        <p class="fs-200 text-accent">Fira Code - Heading 3 - 1.6rem</p>
+                        <p class="fs-500 ff-heading uppercase">Exclusive</p>
+                    </div>
+                    <div>
+                        <p class="fs-200 text-accent">Fira Code - Heading 4 - 1.15rem</p>
+                        <p class="fs-400 ff-heading">Book a visit today.</p>
+                    </div>
+                    <div>
+                        <p class="fs-200 text-accent">Playwrite DE SAS - Heading 5 - 1rem</p>
+                        <p class="fs-300 ff-cursive">Meteor Flood</p>
+                    </div>
+                </div>
+                
+                <div class="flex" style="flex-direction: column; flex-basis: 50%;">
+                    <div>
+                        <p class="fs-200 text-accent">Playwrite DE SAS - Subheading 1</p>
+                        <p class="fs-300 ff-body letter-spacing-1">$400,000</p>
+                    </div>
+                    <div>
+                        <p class="fs-200 text-accent">DM Sans - Nav - Letter Space 0.25em</p>
+                        <p class="fs-300 ff-body letter-spacing-2 uppercase">Joyride</p>
+                    </div>
+                    <div>
+                        <p class="fs-200 text-accent">DM Sans - Body</p>
+                        <p class="fs-300 ff-body">Whether you’re shopping for a reliable sedan, a tough truck, or a family-friendly SUV, our wide selection of new and pre-owned vehicles means there's something here for everyone.</p>
+                    </div>
+                
+                </div>
+            </div>
         </section>
     </div>
-</body>
+  </body>
 </html>
