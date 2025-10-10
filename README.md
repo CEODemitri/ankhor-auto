@@ -11,3 +11,4 @@ HTML, CSS, Javascript, SQL
 ## To Do
 
 - [ ] refactor outdated site. client requests a modern slick design.
+      -- @1.14, flow-space can be customized/implemented using inline styles
