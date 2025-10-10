@@ -10,17 +10,4 @@ HTML, CSS, Javascript, SQL
 
 ## To Do
 
-day to day
-
-- [ ] latest endeavours enhance
-
----
-
-BIG
-
-- [ ] Build the Brand site from scratch
-- [ ] Landing Page Deployed
-
-Credits
-Home background image:
-https://unsplash.com/@wesleyshen
+- [ ] refactor outdated site. client requests a modern slick design.
