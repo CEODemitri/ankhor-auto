@@ -19,226 +19,176 @@
   <body>
     <div id="app">
       <section class="hero-section container">
-        <header class="flex">
-          <nav class="p-6 flex">
-            <p class="menu flex">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-list menu"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-              </svg>
-              <span>Menu</span>
-            </p>
-            <a href="/" class="tooltip-container text-3xl text-red-800">Ankhor Auto <span class="tooltip-text">home</span></a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill menu"
-              viewBox="0 0 16 16">
-              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-            </svg>
+        <header class="hero">
+          <div class="hero-overlay"></div>
+        
+          <nav class="hero-nav">
+            <div class="logo">ANKHOR</div>
+            <ul class="nav-links">
+              <li><a href="#">Models</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Heritage</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </nav>
-      
-          <div class="background"></div>
-          <div class="flex">
-            <article>
-              <span><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#B3B3BE">
-                <path
-                  d="M260-160q-91 0-155.5-63T40-377q0-78 47-139t123-78q25-92 100-149t170-57q117 0 198.5 81.5T760-520q69 8 114.5 59.5T920-340q0 75-52.5 127.5T740-160H260Zm0-80h480q42 0 71-29t29-71q0-42-29-71t-71-29h-60v-80q0-83-58.5-141.5T480-720q-83 0-141.5 58.5T280-520h-20q-58 0-99 41t-41 99q0 58 41 99t99 41Zm220-240Z" />
-              </svg></span>
-              <h1 class="fs-700 letter-spacing-1 ff-heading uppercase">Riding into the sweet future. <span>Wonder </span>One of Ones.</h1>
-              <p>Why pretend to be happy when a full immersize experience like no other is within reach. Repaint your reality today, we will wait. Experience innovation, leave behind redundancy and drive.</p>
-            </article>
-            <section class="hero-buttons">
-              <a href="#">Explore</a>
-              <button>Contact</button>
-            </section>
+        
+          <div class="hero-content">
+            <h1>Redefining Power & Elegance</h1>
+            <p>
+              Where neoclassical form meets the future of automotive engineering.
+            </p>
+            <div class="hero-actions">
+              <a href="#" class="btn-primary">Explore Collection</a>
+              <a href="#" class="btn-secondary">Book Private Viewing</a>
+            </div>
           </div>
-
-
         </header>
       
-      </section>
-      <section class="container innovation">
-        <article>
-          <h2>Our Latest Endeavours</h2>
-          <p>Today&#39;s cars are smarter, safer, and more connected than ever. From self-driving features to electric power and
-            real-time updates, the latest automotive technology is transforming the way we drive and interact with our vehicles.
-          </p>
+        <!-- INNOVATION -->
+        <section class="container innovation">
+          <article class="section-header">
+            <h2>Our Latest Endeavours</h2>
+            <p>
+              Today’s cars are smarter, safer, and more connected than ever. From autonomous intelligence to
+              electrified power, innovation defines the modern drive.
+            </p>
+          </article>
+        
+          <div class="latest-tech grid">
+            <article class="tech-item">
+              <h3>Autonomous Driving</h3>
+              <p>
+                Advanced driver-assistance systems enable partial to full self-driving capabilities,
+                enhancing safety and reducing fatigue.
+              </p>
+            </article>
+        
+            <article class="tech-item">
+              <h3>Electric Powertrains</h3>
+              <p>
+                Next-generation EVs deliver extended range, rapid charging, and sustainable materials.
+              </p>
+            </article>
+        
+            <article class="tech-item">
+              <h3>V2X Communication</h3>
+              <p>
+                Vehicles communicate seamlessly with infrastructure and surroundings to optimize traffic
+                flow and safety.
+              </p>
+            </article>
+        
+            <article class="tech-item">
+              <h3>Over-the-Air Updates</h3>
+              <p>
+                Software updates arrive remotely, evolving performance and features without dealership
+                visits.
+              </p>
+            </article>
+        
+            <article class="tech-item">
+              <h3>Augmented Reality Displays</h3>
+              <p>
+                Windshield-projected navigation and alerts keep drivers informed with minimal distraction.
+              </p>
+            </article>
+          </div>
+        </section>
+        
+        <!-- VEHICLES -->
+        <section class="container vehicles">
+          <article class="section-header">
+            <h2>Pick Your Style</h2>
+          </article>
+        
+          <div class="car-grid grid" id="cars"></div>
+        
+          <div class="section-cta">
+            <a href="#" class="btn-secondary">All Vehicles</a>
+          </div>
+        </section>
+        
+        <!-- INSIGHTS -->
+        <section class="container news-articles">
+          <article class="section-header">
+            <h2>Fuel the Mind</h2>
+            <p>
+              Curated insights and perspectives—crafted with clarity, ambition, and a touch of indulgence.
+            </p>
+          </article>
+        
+          <div class="articles-grid">
+            <article class="featured-article">
+              <h3><a href="#">Exploring the Mountains</a></h3>
+              <p class="meta">
+                <time datetime="2025-10-01">October 1, 2025</time> · Sarah Thompson
+              </p>
+              <p>Preparation, challenge, and breathtaking views—everything you need before your ascent.</p>
+              <a href="#" class="text-link">Read More</a>
+            </article>
+        
+            <article class="featured-article">
+              <h3><a href="#">The Future of Technology</a></h3>
+              <p class="meta">
+                <time datetime="2025-09-25">September 25, 2025</time> · Priya Desai
+              </p>
+              <p>Trends shaping tomorrow and how innovation will redefine daily life.</p>
+              <a href="#" class="text-link">Read More</a>
+            </article>
+          </div>
+        </section>
+        
+        <!-- CONNECT -->
+        <section class="container connect">
+          <article class="section-header">
+            <h2>Connect With Us</h2>
+          </article>
+        
+          <div class="connect-grid">
+            <form class="contact-form">
+              <fieldset>
+                <legend>Private Enquiry</legend>
+        
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required />
+        
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required></textarea>
+        
+                <button type="submit" class="btn-primary">Send Message</button>
+              </fieldset>
+            </form>
+        
+            <address class="contact-details">
+              <p>Email: contact@example.com</p>
+              <p>Phone: +1 (555) 123-4567</p>
+              <p>123 Main Street, Cityville</p>
+            </address>
+          </div>
+        </section>
+        
+        <!-- FOOTER -->
+        <footer class="site-footer">
+          <div class="footer-container">
+            <div class="footer-branding">
+              <h2>Ankhor Auto</h2>
+              <p>Precision. Heritage. Motion.</p>
+            </div>
+        
+            <nav class="footer-links">
+              <ul>
+                <li><a href="#cars">Inventory</a></li>
+                <li><a href="#">Financing</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </nav>
+          </div>
+        
+          <div class="footer-bottom">
+            © 2025 Ankhor Auto. All rights reserved.
+          </div>
+        </footer>
 
-        </article>
-
-        <div class="latest-tech grid">
-          <div class="tech-item">
-            <h3>Autonomous Driving</h3>
-            <p>Advanced driver-assistance systems (ADAS) now enable partial to full self-driving capabilities, improving safety
-              and reducing driver fatigue.</p>
-          </div>
-        
-          <div class="tech-item">
-            <h3>Electric Powertrains</h3>
-            <p>Next-gen electric vehicles (EVs) feature improved battery ranges, fast charging, and sustainable materials,
-              reshaping the automotive landscape.</p>
-          </div>
-        
-          <div class="tech-item">
-            <h3>Vehicle-to-Everything (V2X) Communication</h3>
-            <p>V2X technology allows cars to communicate with other vehicles, infrastructure, and pedestrians to enhance traffic
-              flow and safety.</p>
-          </div>
-        
-          <div class="tech-item">
-            <h3>Over-the-Air Updates</h3>
-            <p>Modern cars receive software updates remotely, adding new features and fixing bugs without the need for
-              dealership visits.</p>
-          </div>
-        
-          <div class="tech-item">
-            <h3>Augmented Reality Dashboards</h3>
-            <p>AR dashboards project navigation and hazard alerts directly onto the windshield, keeping drivers informed without
-              distraction.</p>
-          </div>
-        </div>
-        
-      </section>
-      
-      <section class="container">
-        <article>
-          <h2>Pick Your Style</h2>
-        </article>
-
-        <div class="car-grid grid" id="cars"></div>
-
-        <a href="#">All Vehicles</a>
-      </section>
-      
-      <section class="container news-articles">
-        <article>
-          <h2>Fuel the Mind</h2>
-          <p>We can obviously lie and exaggerate all over this site; here's a few references for clarity. Created by our fine, bias partners at ChatWeBeCheat.</p>
-        </article>
-
-        <article class="featured-article">
-          <h3><a href="article1.html">Exploring the Mountains</a></h3>
-          <p>
-            <time datetime="2025-10-01">October 1, 2025</time> |
-          <address>by Sarah Thompson</address>
-          </p>
-          <p>Discover the beauty and challenges of mountain hiking. From preparation to breathtaking views, here's what you need
-            to know before your next adventure.</p>
-          <a href="article1.html"><button>Read More</button></a>
-        </article>
-        
-        <article class="featured-article">
-          <h3><a href="article2.html">Simple Tips for a Healthy Lifestyle</a></h3>
-          <p>
-            <time datetime="2025-09-28">September 28, 2025</time> |
-          <address>by Mark Rivera</address>
-          </p>
-          <p>Maintaining a healthy lifestyle doesn't have to be complicated. These easy-to-follow tips will help you stay fit,
-            eat well, and feel great.</p>
-          <a href="article2.html"><button>Read More</button></a>
-        </article>
-        
-        <article class="featured-article">
-          <h3><a href="article3.html">The Future of Technology</a></h3>
-          <p>
-            <time datetime="2025-09-25">September 25, 2025</time> |
-          <address>by Priya Desai</address>
-          </p>
-          <p>Technology is evolving faster than ever. Take a glimpse into the trends shaping our world and how they might impact
-            your daily life.</p>
-          <a href="article3.html"><button>Read More</button></a>
-        </article>
-        
-        <article class="featured-article">
-          <h3><a href="article4.html">Traveling on a Budget</a></h3>
-          <p>
-            <time datetime="2025-09-20">September 20, 2025</time> |
-          <address>by James Lee</address>
-          </p>
-          <p>Dreaming of seeing the world without breaking the bank? Learn how to find deals, save money, and travel smarter
-            with these practical tips.</p>
-          <a href="article4.html"><button>Read More</button></a>
-        </article>
-        
-        <article class="featured-article">
-          <h3><a href="article5.html">Mastering Remote Work</a></h3>
-          <p>
-            <time datetime="2025-09-18">September 18, 2025</time> |
-          <address>by Emily Nguyen</address>
-          </p>
-          <p>Working from home offers flexibility, but it comes with challenges. Here's how to stay productive, organized, and
-            balanced while working remotely.</p>
-          <a href="article5.html"><button>Read More</button></a>
-        </article>
-      </section>
-      
-      <section class="container connect">
-        <article>
-          <h2>Connect with Us</h2>
-        </article>
-        <form action="submit-form.php" method="post">
-          <fieldset>
-            <legend>Send us a message</legend>
-        
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-        
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
-        
-            <button type="submit">Send Message</button>
-          </fieldset>
-        </form>
-        
-        <address>
-          <p><strong>Email:</strong> contact@example.com</p>
-          <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-          <p><strong>Address:</strong> 123 Main Street, Cityville, Country</p>
-        </address>
-        <aside>
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-            <span class="material-symbols-outlined">facebook</span>
-          </a>
-          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-            <span class="material-symbols-outlined">X</span>
-          </a>
-          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-            <span class="material-symbols-outlined">photo_camera</span>
-          </a>
-          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-            <span class="material-symbols-outlined">business_center</span>
-          </a>
-        </aside>
-      </section>
-      
-      <footer class="site-footer">
-        <div class="footer-container">
-          <div class="footer-branding">
-            <h2>Ankhor Auto</h2>
-            <p>Your trusted car dealer since 1998.</p>
-          </div>
-      
-          <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#cars">Inventory</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#">Financing</a></li>
-              <li><a href="#">About Us</a></li>
-            </ul>
-          </div>
-      
-          <div class="footer-contact">
-            <h3>Contact</h3>
-            <p>📍 123 Car Street, Auto City</p>
-            <p>📞 (555) 123-4567</p>
-            <p>✉️ sales@premierautolot.com</p>
-          </div>
-        </div>
-      
-        <div class="footer-bottom">
-          &copy; 2025 Premier Auto Lot. All rights reserved.
-        </div>
-      </footer>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>

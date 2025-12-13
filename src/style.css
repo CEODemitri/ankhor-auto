@@ -114,6 +114,28 @@ select {
   gap: var(--gap, 1rem);
 }
 
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  letter-spacing: 0.12em;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.section-header p {
+  color: #bcbcbc;
+  line-height: 1.8;
+}
+
+.flow>*+* {
+  margin-top: 1.5rem;
+}
+
 /* .flow > *:not(:first-child) */
 /* safely creates spacing for a group of children. will be even now */
 .flow > *:where(:not(:first-child)) {
@@ -170,6 +192,21 @@ select {
   color: hsl(var(--accent));
 }
 
+/* =========================================================
+   COLOR SWATCHES
+========================================================= */
+.color-swatches {
+  align-items: stretch;
+}
+
+.swatch {
+  padding: 1.5rem;
+  min-width: 180px;
+  border: 1px solid rgba(201, 161, 74, 0.25);
+  text-align: center;
+  font-size: 0.85rem;
+}
+
 /* Typography */
 .ff-heading {
   font-family: var(--ff-heading);
@@ -221,6 +258,12 @@ select {
   font-weight: 800;
 }
 
+/* =========================================================
+   TYPOGRAPHY GRID
+========================================================= */
+.typography-grid {
+  align-items: flex-start;
+}
 /* Spacing */
 
 /* Components */
@@ -233,7 +276,7 @@ select {
   border-radius: 4px;
   font-weight: 700;
   text-decoration: none;
-  z-index: 1;
+  z-index: 1wwq;
 }
 
 .btn::after {
@@ -254,6 +297,7 @@ select {
   transition: transform 0.3s ease-in-out;
 }
 
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -264,88 +308,182 @@ select {
   }
 }
 
-.hero-section {
-  header {
-    flex-direction: column;
-  }
-
-  nav {
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-    border-radius: 0.4rem;
-  }
-
-  .menu {
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 1.1em;
-    cursor: pointer;
-    padding: 0;
-  }
-
-  .tooltip-container {
-    position: relative;
-    display: inline-block;
-    /* Or block, depending on layout */
-  }
-
-  .tooltip-text {
-    font-size: 0.4em;
-    visibility: hidden;
-    opacity: 0;
-    /* For smooth transitions */
-    position: absolute;
-    left: 35%;
-    top: 36px;
-    /* Positioning adjustments */
-    background-color: black;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-    z-index: 1;
-    /* Ensures tooltip appears above other content */
-    transition: opacity 0.3s ease;
-    /* For smooth fade-in/out */
-  }
-
-  .tooltip-container:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  div {
-    flex-direction: column;
-    justify-content: end;
-  }
+/* =========================================================
+   HERO
+========================================================= */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("hero-car.jpg") center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
-.menu {
-  padding: 1rem;
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(10, 10, 14, 0.85),
+      rgba(10, 10, 14, 0.6));
+  z-index: 1;
 }
 
-.menu:hover {
-  background-color: #1a1a1a30;
-  transform: scale(0.8);
-  border-radius: 4px;
+/* =========================================================
+   NAVIGATION
+========================================================= */
+.hero-nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 4rem;
 }
 
-.innovation {
-  background-color: black;
+.logo {
+  font-size: 1.6rem;
+  letter-spacing: 0.25em;
+  font-weight: 600;
 }
 
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #d4d4d4;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c9a14a;
+}
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cfcfcf;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.9rem 2.2rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #c9a14a;
+  color: #0b0c10;
+}
+
+.btn-primary:hover {
+  background: #ddb765;
+}
+
+.btn-secondary {
+  border: 1px solid #c9a14a;
+  color: #c9a14a;
+}
+
+.btn-secondary:hover {
+  background: #c9a14a;
+  color: #0b0c10;
+}
+
+/* =========================================================
+   LAYOUT UTILITIES
+========================================================= */
+.innovation,
+.vehicles,
+.news-articles,
+.connect {
+  background: #0e0f14;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* =========================================================
+   INNOVATION
+========================================================= */
+.latest-tech {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.tech-item {
+  padding: 2.2rem;
+  text-align: center;
+  border: 1px solid rgba(201, 161, 74, 0.25);
+  background: rgba(15, 16, 20, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-item h3 {
+  color: #c9a14a;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+}
+
+.tech-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================================================
+   VEHICLES
+========================================================= */
 .car-grid {
   grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .car-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #fff;
   grid-column: span 6;
+  background: #15161b;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .car-card img {
@@ -355,83 +493,138 @@ select {
 }
 
 .car-card .info {
-  padding: 1rem;
-}
-
-/* .card :where(h1, h2, h3) */
-/* everyone listed invited to party */
-
-/* lastest innovation */
-.latest-tech {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.tech-item {
-  text-align: center;
-  padding: 0.8rem;
-  border: 1px solid #333;
-  border-radius: 8px;
-  background-color: #1a1a1a;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* pick style */
-.car-card {
-  background-color: #2d2d2d;
-  border: none;
-}
-
-.car-card .info {
-  color: #b3b3b3;
+  padding: 1.2rem;
+  color: #bcbcbc;
 }
 
 .car-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  animation: border-glow 1.5s infinite;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
 }
 
-@keyframes border-glow {
-  0% {
-    box-shadow: 0 0 5px #ff6f61;
-  }
-  50% {
-    box-shadow: 0 0 20px #ff6f61;
-  }
-  100% {
-    box-shadow: 0 0 5px #ff6f61;
-  }
-}
-
-/* blog */
+/* =========================================================
+   ARTICLES
+========================================================= */
 .news-articles {
-  background-color: #121212;
-  padding: 1rem;
-  border-radius: 8px;
-  height: fit-content;
+  padding: 3rem 2rem;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
 }
 
 .featured-article {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem;
+  background: #15161b;
+  border: 1px solid #2a2a2a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .featured-article:hover {
-  background-color: #2d2d2d;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
 }
 
-/* connect */
-.connect {
-  background-color: #121212;
-  padding: 1rem;
-  border-radius: 8px;
-  height: 525px;
+.featured-article h3 a {
+  color: #eaeaea;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.featured-article .meta {
+  margin: 0.6rem 0 1.2rem;
+  font-size: 0.8rem;
+  color: #9a9a9a;
+}
+
+.text-link {
+  color: #c9a14a;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+}
+
+/* =========================================================
+   CONNECT
+========================================================= */
+.connect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+}
+
+.contact-form fieldset {
+  padding: 2.5rem;
+  border: 1px solid rgba(201, 161, 74, 0.3);
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1.2rem;
+  font-size: 0.85rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  background: #0b0c10;
+  border: 1px solid #333;
+  color: #eaeaea;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+.site-footer {
+  background: #090a0d;
+  padding: 4rem 2rem 2rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.footer-links a {
+  color: #bcbcbc;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #777;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 768px) {
+  .hero-nav {
+    padding: 1.8rem 2rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .car-card {
+    grid-column: span 12;
+  }
 }

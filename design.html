@@ -4,107 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>design System for AA</title>
+    <title>Design Guide</title>
   </head>
-  <body class="">
-    <div class="container">
-      <h1 class="fs-700 ff-heading">Design Space</h1>
-
-      <section id="colors" style="margin: 4rem 0">
-        <h2 class="fs-500 ff-heading">🧞‍♂️ Colors</h2>
-        <div class="flex">
-          <div class="bg-dark text-white" style="padding: 1rem">
+  <body class="design-system">
+    <main class="container flow">
+      <h1 class="fs-700 ff-heading uppercase">Design Space</h1>
+  
+      <!-- COLORS -->
+      <section id="colors" class="section flow">
+        <h2 class="fs-500 ff-heading">Colors</h2>
+  
+        <div class="flex color-swatches">
+          <div class="swatch bg-dark text-white">
             <p>Dark</p>
             <p>hsl(180, 60%, 6%)</p>
           </div>
-          <div class="bg-light text-accent" style="padding: 1rem">
+  
+          <div class="swatch bg-light text-dark">
             <p>Light</p>
             <p>hsl(180, 94%, 86%)</p>
           </div>
-          <div class="bg-white text-dark" style="padding: 1rem">
+  
+          <div class="swatch bg-white text-dark">
             <p>White</p>
             <p>hsl(0, 0%, 100%)</p>
           </div>
-          <div class="bg-accent text-dark" style="padding: 1rem">
+  
+          <div class="swatch bg-accent text-dark">
             <p>Accent</p>
-            <p>hsl(180, 94%, 86%)</p>
+            <p>hsl(42, 55%, 54%)</p>
           </div>
         </div>
       </section>
-
-      <section id="typography" style="margin: 4rem 0">
-        <h2 class="fs-500 ff-heading">🥷 Typography</h2>
-        <div class="flex">
-          <div class="flow" style="flex-direction: column; flex-basis: 100%">
+  
+      <!-- TYPOGRAPHY -->
+      <section id="typography" class="section flow">
+        <h2 class="fs-500 ff-heading">Typography</h2>
+  
+        <div class="flex typography-grid">
+          <div class="flow">
             <div>
-              <p class="fs-200 text-accent">Fira Code - Heading 1 - 3.8rem</p>
+              <p class="fs-200 text-accent">Heading 1</p>
               <p class="fs-700 ff-heading uppercase">Chariot</p>
             </div>
+  
             <div>
-              <p class="fs-200 text-accent">Fira Code - Heading 2 - 2rem</p>
+              <p class="fs-200 text-accent">Heading 2</p>
               <p class="fs-600 ff-heading uppercase">Starfield</p>
             </div>
+  
             <div>
-              <p class="fs-200 text-accent">Fira Code - Heading 3 - 1.6rem</p>
+              <p class="fs-200 text-accent">Heading 3</p>
               <p class="fs-500 ff-heading uppercase">Exclusive</p>
             </div>
+  
             <div>
-              <p class="fs-200 text-accent">Fira Code - Heading 4 - 1.15rem</p>
+              <p class="fs-200 text-accent">Heading 4</p>
               <p class="fs-400 ff-heading">Book a visit today.</p>
             </div>
+  
             <div>
-              <p class="fs-200 text-accent">
-                Playwrite DE SAS - Heading 5 - 1rem
-              </p>
+              <p class="fs-200 text-accent">Cursive Accent</p>
               <p class="fs-300 ff-cursive">Meteor Flood</p>
             </div>
           </div>
-
-          <div class="flow" style="flex-direction: column; flex-basis: 100%">
+  
+          <div class="flow">
             <div>
-              <p class="fs-200 text-accent">Playwrite DE SAS - Subheading 1</p>
+              <p class="fs-200 text-accent">Price / Subheading</p>
               <p class="fs-300 ff-body letter-spacing-1">$400,000</p>
             </div>
+  
             <div>
-              <p class="fs-200 text-accent">
-                DM Sans - Nav - Letter Space 0.25em
-              </p>
+              <p class="fs-200 text-accent">Navigation</p>
               <p class="fs-300 ff-body letter-spacing-2 uppercase">Joyride</p>
             </div>
+  
             <div>
-              <p class="fs-200 text-accent">DM Sans - Body</p>
+              <p class="fs-200 text-accent">Body</p>
               <p class="fs-300 ff-body">
-                Whether you’re shopping for a reliable sedan, a tough truck, or
-                a family-friendly SUV, our wide selection of new and pre-owned
-                vehicles means there's something here for everyone.
+                Whether you’re shopping for a reliable sedan, a tough truck, or a
+                family-friendly SUV, our wide selection ensures distinction.
               </p>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="flow" id="interactiveElements" style="margin: 4rem 0">
-        <h2 class="fs-500 ff-heading">👏 Interactive Elements</h2>
-
-        <!-- navigation -->
-        <div></div>
-
+  
+      <!-- INTERACTIVE -->
+      <section id="interactiveElements" class="section flow">
+        <h2 class="fs-500 ff-heading">Interactive Elements</h2>
+  
         <div class="flex">
-          <div>
-            <!-- cta button -->
-            <a class="btn uppercase ff-heading text-dark bg-accent fs-500" href="#">Inventory</a>
-            <a class="btn uppercase ff-heading text-dark bg-white fs-500" href="#">Treasures</a>
-          </div>
-        </div>
-
-        <div>
-          <!-- tabs -->
-
-          <!-- dots -->
-
-          <!-- numbers -->
+          <a class="btn btn-primary uppercase ff-heading fs-500" href="#">
+            Inventory
+          </a>
+  
+          <a class="btn btn-secondary uppercase ff-heading fs-500" href="#">
+            Treasures
+          </a>
         </div>
       </section>
-    </div>
+    </main>
   </body>
+
 </html>
