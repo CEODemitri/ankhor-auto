@@ -10,6 +10,28 @@
 // `;
 
 // setupCounter(document.querySelector("#counter"));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { useEffect, useState } from "react";
+
+const Greeting = () => {
+  const [greeting, setGreeting] = useState("Loading...");
+
+  useEffect(() => {
+  fetch("/api/greeting") // relative path works because of proxy
+    .then(res => res.json())
+    .then(data => setGreeting(data.greeting))
+    .catch(() => setGreeting("Failed to load greeting"));
+}, []);
+
+
+  return <h1>{greeting}</h1>; // use JSX syntax
+};
+
+const root = ReactDOM.createRoot(document.getElementById("react-greeting"));
+root.render(<Greeting />);
+
+root.render(React.createElement(Greeting));
 
 const carStyles = [
   {
