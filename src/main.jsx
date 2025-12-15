@@ -31,7 +31,6 @@ const Greeting = () => {
 const root = ReactDOM.createRoot(document.getElementById("react-greeting"));
 root.render(<Greeting />);
 
-root.render(React.createElement(Greeting));
 
 const carStyles = [
   {

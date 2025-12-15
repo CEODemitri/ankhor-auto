@@ -12,3 +12,13 @@ HTML, CSS, Javascript, SQL
 
 - [ ] refactor outdated site. client requests a modern slick design.
       -- @1.33, flow-space can be customized/implemented using inline styles
+
+## restart
+
+cd backend
+node src/index.js
+
+0. add a route
+1. extract to controller
+2. call with index
+3. consume on frontend (make sure use id on element)

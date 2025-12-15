@@ -8,6 +8,7 @@ const app = express();
 app.use(cors({ origin: "http://localhost:5173" }));
 // built in middleware
 app.use(express.json());
+
 app.use("/api/health", healthRoutes);
 app.get("/api/greeting", getGreeting);
 
