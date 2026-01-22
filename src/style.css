@@ -449,6 +449,7 @@ select {
 ========================================================= */
 .latest-tech {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  padding: 2rem 0;
 }
 
 .tech-item {
@@ -484,6 +485,7 @@ select {
   background: #15161b;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.8rem;
 }
 
 .car-card img {
@@ -499,6 +501,7 @@ select {
 
 .car-card:hover {
   transform: translateY(-8px);
+  background-color: #090a0d;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
 }
 
@@ -553,6 +556,12 @@ select {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 4rem;
+
+  button {
+    border: none;
+    letter-spacing: 0.15em;
+    transition: background 0.3s ease;
+  }
 }
 
 .contact-form fieldset {
